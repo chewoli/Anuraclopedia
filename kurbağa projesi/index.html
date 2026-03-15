@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuraclopedia</title>
+    
+    <link rel="icon" type="image/jpeg" href="kurbaga-ikon.jpg?v=3">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<footer class="imza">
+    <p>Created by <strong>[chewoli]</strong> &copy; 2026</p>
+</footer>
+<body>
+
+    
+    <header class="ust-alan">
+    <h1>WELCOME TO THE ANURACLOPEDIA!</h1>
+    <div class="tanim">
+        <strong>Anura:</strong> Kuyruksuz kurbağaları kapsayan, amfibiler sınıfına ait bilimsel takım.
+    </div>
+
+    <div class="misyon">
+    <p>"As a noob coder who's obsessed with frogs, I want to share my passion with the web world and with you. Anuraclopedia contains various frogs and their background stories; while enjoying the Anura world, keep calm and always croak!"</p>
+    <span class="nickname">— chewoli</span> </div>
+
+</header>
+
+    <main class="galeri">
+        <div class="kart" onclick="vrakCal()">
+            <img src="kirmizi-gozlu.jpg" alt="Kırmızı Gözlü">
+            <div class="bilgi-katmani">
+                <h3>Kırmızı Gözlü Ağaç Kurbağası</h3>
+                <p>Gece avcılarını korkutmak için o meşhur kırmızı gözlerini kullanır.</p>
+            </div>
+        </div>
+
+        <div class="kart" onclick="vrakCal()">
+            <img src="mavi-zehirli.jpg" alt="Mavi Zehirli">
+            <div class="bilgi-katmani">
+                <h3>Mavi Zehirli Ok Kurbağası</h3>
+                <p>Doğadaki en parlak maviye sahiptir ama dokunmak çok tehlikelidir!</p>
+            </div>
+        </div>
+
+        <div class="kart" onclick="vrakCal()">
+            <img src="boga-kurbagasi.jpg" alt="Boğa Kurbağası">
+            <div class="bilgi-katmani">
+                <h3>Boğa Kurbağası</h3>
+                <p>Derin sesiyle göletlerin efendisidir. Oldukça büyük ve güçlüdür.</p>
+            </div>
+        </div>
+    </main>
+
+    <audio id="vrakSesi">
+        <source src="vrak.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function vrakCal() {
+            const audio = document.getElementById("vrakSesi");
+            audio.currentTime = 0;
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
